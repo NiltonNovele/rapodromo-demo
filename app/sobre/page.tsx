@@ -1,7 +1,3 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-// import Hero from "../components/Hero";
-// import Latest from "@/components/Latest";
 import Plans from "@/components/Plans";
 import About from "../../components/About";
 import Sponsors from "@/components/Sponsors";
