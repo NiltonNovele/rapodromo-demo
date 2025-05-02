@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Plans from "@/components/Plans";
 import About from "../../components/About";
 import Sponsors from "@/components/Sponsors";
@@ -19,9 +20,11 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
           {/* Product Card 1 */}
           <div className="bg-zinc-100 p-6 rounded-xl shadow-lg">
-            <img
-              src="https://via.placeholder.com/300"
+            <Image
+              src="/sheta.png"
               alt="Produto 1"
+              width={500}
+              height={300}
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
             <h3 className="text-xl font-semibold mb-2">Camiseta Rapódromo</h3>
@@ -36,9 +39,11 @@ export default function Home() {
 
           {/* Product Card 2 */}
           <div className="bg-zinc-100 p-6 rounded-xl shadow-lg">
-            <img
-              src="https://via.placeholder.com/300"
+            <Image
+              src="/sheta.png"
               alt="Produto 2"
+              width={500}
+              height={300}
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
             <h3 className="text-xl font-semibold mb-2">Caneca Rapódromo</h3>
@@ -53,9 +58,11 @@ export default function Home() {
 
           {/* Product Card 3 */}
           <div className="bg-zinc-100 p-6 rounded-xl shadow-lg">
-            <img
-              src="https://via.placeholder.com/300"
+            <Image
+              src="/sheta.png"
               alt="Produto 3"
+              width={500}
+              height={300}
               className="w-full h-48 object-cover rounded-lg mb-4"
             />
             <h3 className="text-xl font-semibold mb-2">Boné Rapódromo</h3>

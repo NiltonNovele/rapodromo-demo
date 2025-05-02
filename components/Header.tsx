@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import {
@@ -14,6 +14,7 @@ import {
   UserPlusIcon,
   MenuIcon,
   XIcon,
+  ShoppingCart,
 } from "lucide-react";
 
 export default function Header() {
@@ -25,7 +26,13 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-2">
-          <img src="/logo.png" alt="Rapódromo" className="h-8 w-8" />
+          <Image
+            src="/logo.png"
+            width={500}
+            height={300}
+            alt="Rapódromo"
+            className="h-8 w-8"
+          />
           <span className="text-2xl font-bold text-red-600">Rapódromo</span>
         </Link>
 
@@ -54,6 +61,12 @@ export default function Header() {
             className="flex items-center gap-1 hover:text-red-500"
           >
             <FlameIcon className="w-4 h-4" /> Batalhas
+          </Link>
+          <Link
+            href="/shop"
+            className="flex items-center gap-1 hover:text-red-500"
+          >
+            <ShoppingCart className="w-4 h-4" /> Loja
           </Link>
           <Link
             href="/communidade/anuncios"

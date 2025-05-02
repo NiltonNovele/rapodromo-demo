@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function BilhetesPage() {
   return (
     <main className="p-8 bg-gray-900 text-white min-h-screen">
@@ -6,9 +7,11 @@ export default function BilhetesPage() {
       <div className="flex flex-col lg:flex-row gap-10">
         {/* Bilhete com imagem à esquerda */}
         <div className="flex-1 bg-zinc-800 p-6 rounded-2xl shadow-lg flex flex-col lg:flex-row gap-6">
-          <img
+          <Image
             src="/cover.png"
             alt="Rapódromo Live"
+            width={500}
+            height={300}
             className="w-full lg:w-64 h-64 object-cover rounded-xl bg-black"
           />
 

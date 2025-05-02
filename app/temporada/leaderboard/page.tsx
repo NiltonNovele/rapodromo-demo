@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   FaTrophy,
   FaMedal,
@@ -109,10 +110,12 @@ export default function LeaderboardPage() {
 
             {/* Champion Highlight */}
             <div className="flex flex-col items-center justify-center mt-32 space-y-3">
-              <img
-                src="/gladiadores/naruto.jpg"
-                alt="Naruto"
-                className="w-24 h-24 rounded-full border-4 border-yellow-600 object-cover"
+              <Image
+                src="/Naruto.png"
+                alt="Description"
+                width={96}
+                height={96}
+                className="rounded-full border-4 border-yellow-600 object-cover"
               />
               <h5 className="text-xl font-bold text-yellow-500">Naruto</h5>
               <p className="text-gray-400 text-base text-center">

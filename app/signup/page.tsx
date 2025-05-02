@@ -1,9 +1,11 @@
+import Image from "next/image";
+
 export default function SignupPage() {
   return (
     <main className="min-h-screen flex items-center justify-center bg-black text-white px-4">
       <div className="bg-gray-900 p-8 rounded-xl shadow-2xl w-full max-w-md">
         <div className="flex justify-center mb-6">
-          <img src="/logo.png" alt="Logo" className="h-16" />
+          <Image src="/logo.png" alt="Logo" width={50} height={30} />
         </div>
         <h1 className="text-2xl font-bold text-center mb-6">Criar Conta</h1>
         <form className="space-y-4">

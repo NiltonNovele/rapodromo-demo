@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -11,10 +12,12 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Card 1 */}
         <div className="bg-zinc-800 text-white p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition-all">
-          <img
-            src="/arena.jpg"
+          <Image
+            src="/ma25.png"
             alt="Arena Rapódromo"
             className="rounded-xl mb-4 w-full h-48 object-cover"
+            width={500}
+            height={300}
           />
           <h3 className="text-xl font-semibold mb-3">O que é</h3>
           <p className="leading-relaxed text-base">
@@ -26,9 +29,11 @@ const About = () => {
 
         {/* Card 2 */}
         <div className="bg-gradient-to-br from-red-500 to-yellow-500 text-black p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition-all">
-          <img
-            src="/hosts.jpg"
+          <Image
+            src="/allanedu.png"
             alt="Allan & Duas Karas"
+            width={500}
+            height={300}
             className="rounded-xl mb-4 w-full h-48 object-cover"
           />
           <h3 className="text-xl font-semibold mb-3">Quem são os Hosts 🎤</h3>
@@ -42,9 +47,11 @@ const About = () => {
 
         {/* Card 3 */}
         <div className="bg-zinc-800 text-white p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition-all">
-          <img
-            src="/gladiadores.jpg"
+          <Image
+            src="/glads.png"
             alt="Gladiadores"
+            width={500}
+            height={300}
             className="rounded-xl mb-4 w-full h-48 object-cover"
           />
           <h3 className="text-xl font-semibold mb-3">Gladiadores 🔥</h3>
@@ -57,9 +64,11 @@ const About = () => {
 
         {/* Card 4 */}
         <div className="bg-gradient-to-br from-purple-500 to-pink-500 text-black p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition-all">
-          <img
-            src="/batalhas.jpg"
+          <Image
+            src="/form.png"
             alt="Batalhas"
+            width={500}
+            height={300}
             className="rounded-xl mb-4 w-full h-48 object-cover"
           />
           <h3 className="text-xl font-semibold mb-3">Formato 🏆</h3>
@@ -83,11 +92,11 @@ const About = () => {
             {/* Step 1 */}
             <div className="relative flex gap-6 items-start">
               <div className="absolute -left-[30px] top-1 w-6 h-6 bg-yellow-400 border-4 border-white rounded-full shadow-md"></div>
-              <img
+              {/* <img
                 src="/fundacao.jpg"
                 alt="Fundação"
                 className="w-32 h-32 rounded-xl object-cover shadow-md"
-              />
+              /> */}
               <div>
                 <h4 className="text-xl font-semibold text-white">
                   🌱 Fundação
@@ -103,11 +112,11 @@ const About = () => {
             {/* Step 2 */}
             <div className="relative flex gap-6 items-start">
               <div className="absolute -left-[30px] top-1 w-6 h-6 bg-yellow-400 border-4 border-white rounded-full shadow-md"></div>
-              <img
+              {/* <img
                 src="/primeiro-evento.jpg"
                 alt="Primeiro Evento"
                 className="w-32 h-32 rounded-xl object-cover shadow-md"
-              />
+              /> */}
               <div>
                 <h4 className="text-xl font-semibold text-white">
                   🎤 Primeiro Evento
@@ -123,11 +132,11 @@ const About = () => {
             {/* Step 3 */}
             <div className="relative flex gap-6 items-start">
               <div className="absolute -left-[30px] top-1 w-6 h-6 bg-yellow-400 border-4 border-white rounded-full shadow-md"></div>
-              <img
+              {/* <img
                 src="/expansao.jpg"
                 alt="Expansão"
                 className="w-32 h-32 rounded-xl object-cover shadow-md"
-              />
+              /> */}
               <div>
                 <h4 className="text-xl font-semibold text-white">
                   💡 Expansão
@@ -145,11 +154,11 @@ const About = () => {
             {/* Step 4 */}
             <div className="relative flex gap-6 items-start">
               <div className="absolute -left-[30px] top-1 w-6 h-6 bg-yellow-400 border-4 border-white rounded-full shadow-md"></div>
-              <img
+              {/* <img
                 src="/impacto-cultural.jpg"
                 alt="Impacto Cultural"
                 className="w-32 h-32 rounded-xl object-cover shadow-md"
-              />
+              /> */}
               <div>
                 <h4 className="text-xl font-semibold text-white">
                   🌍 Impacto Cultural
@@ -164,11 +173,11 @@ const About = () => {
             {/* Step 5 */}
             <div className="relative flex gap-6 items-start">
               <div className="absolute -left-[30px] top-1 w-6 h-6 bg-yellow-400 border-4 border-white rounded-full shadow-md"></div>
-              <img
+              {/* <img
                 src="/futuro.jpg"
                 alt="O Futuro"
                 className="w-32 h-32 rounded-xl object-cover shadow-md"
-              />
+              /> */}
               <div>
                 <h4 className="text-xl font-semibold text-white">
                   🔥 O Futuro

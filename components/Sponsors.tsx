@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function PartnersSection() {
   const partners = [
-    { name: "Caldo Ricci", logo: "/logos/parceiro1.png" },
-    { name: "Caste Lite", logo: "/logos/parceiro2.png" },
-    { name: "SynctechX", logo: "/logos/parceiro3.png" },
-    { name: "Scala", logo: "/logos/parceiro4.png" },
+    { name: "Caldo Ricci", logo: "/ricci.jpg" },
+    { name: "Caste Lite", logo: "/castle.webp" },
+    { name: "SynctechX", logo: "/synctechx.png" },
+    { name: "Scala", logo: "/scala.jpg" },
   ];
 
   return (

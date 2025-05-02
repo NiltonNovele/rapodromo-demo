@@ -1,23 +1,24 @@
+import Image from "next/image";
 import { FaTrophy, FaPlay, FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export default function TemporadaPage() {
   const gladiators = [
     {
-      name: "Yung Blud",
+      name: "Ti Duwas",
       wins: 5,
       losses: 2,
       draws: 1,
       battles: 8,
-      image: "/path-to-gladiator1.jpg",
+      image: "/Ti duwas.png",
       temporadaWinner: true,
     },
     {
-      name: "Nilton",
+      name: "Allan",
       wins: 4,
       losses: 3,
       draws: 1,
       battles: 8,
-      image: "/path-to-gladiator2.jpg",
+      image: "/Allan.png",
       temporadaWinner: false,
     },
     {
@@ -26,7 +27,7 @@ export default function TemporadaPage() {
       losses: 1,
       draws: 1,
       battles: 8,
-      image: "/path-to-gladiator3.jpg",
+      image: "/naruto.png",
       temporadaWinner: true,
     },
   ];
@@ -48,10 +49,15 @@ export default function TemporadaPage() {
             className="bg-zinc-800 p-6 rounded-xl shadow-2xl transform transition-all duration-300 hover:scale-105 relative overflow-hidden"
           >
             {/* Gladiator Image */}
-            <div
-              className="w-full h-56 bg-cover bg-center rounded-xl mb-6"
-              style={{ backgroundImage: `url(${gladiator.image})` }}
-            ></div>
+            <div className="w-full h-56 mb-6 relative rounded-xl overflow-hidden">
+              <Image
+                src={gladiator.image}
+                alt={gladiator.name}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
+              />
+            </div>
 
             {/* Gladiator Info */}
             <div className="text-center space-y-4">
