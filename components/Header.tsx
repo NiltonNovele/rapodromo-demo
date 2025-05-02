@@ -69,7 +69,7 @@ export default function Header() {
             <ShoppingCart className="w-4 h-4" /> Loja
           </Link>
           <Link
-            href="/communidade/anuncios"
+            href="/communidade"
             className="flex items-center gap-1 hover:text-red-500"
           >
             <UsersIcon className="w-4 h-4" /> Comunidade
