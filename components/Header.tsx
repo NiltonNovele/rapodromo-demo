@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 export default function Header() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Simulação
+  const [isLoggedIn] = useState(false); // Simulação
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
